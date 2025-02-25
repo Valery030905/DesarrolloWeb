@@ -1,30 +1,50 @@
+body{
+    background: linear-gradient(to bottom,#fff ,rgba(253, 201, 219, 0.781));
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+.fade-in{
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+body.loaded{
+    opacity: 1;
+}
 .contenedor{
-    width: 300px;
-    background-color: #fff;
-    border: 1px color(#ccc);
+    width: 400px;
+    border: 6px color(#b3b3b3);
+    border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 70%;
     margin: 20px auto;
     padding: 20px;
     text-align: center;
-    
+    background: linear-gradient(180deg,#fff ,#f84fce25);
 }   
 img{
-    border-radius: 50px;
+    border-radius: 100px;
     margin-bottom: 15px;
+    border: 2px solid #000; 
 }
 h1{
-    font-size: 24px;
-    color: #FFA2A2;
+    font-size: 30px;
+    color: #000;
     text-align: center;
+    text-shadow: 4px 4px 5px #0005;
 }
 h2{
-    font-size: 18px;
+    font-size: 20px;
     color: #666;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 h3{
-    font-size: 14px;
+    font-size: 15px;
     color: #444;
     text-align: justify;
     margin-bottom: 15px;
@@ -43,8 +63,10 @@ h3{
     i{
         font-size: 50px;
     }
-    i:hover{
-        color: #E6ABFF;
+    i:hover, i:focus{
+        color: #ff8be6;
+        box-shadow: 0 0.1em 0.5em -0.4em var(--hover);
+        transform: translateY(-0.10em);
     }
     .linkedin{
         color: #0077b5;
@@ -55,5 +77,20 @@ h3{
     .git{
         color: #333;
     }
+}
+.boton{
+    padding:10px 20px;
+    button{
+        padding:10px 20px;
+        font-size: 20px;
+        background-color: #f7cef3d8;
+        border-radius: 5px;
+
+        
+    }
+    button:hover{
+        background: linear-gradient(180deg,#fff ,#ff32cca2);
+    }
+   
 }
 
