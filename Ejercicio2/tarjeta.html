@@ -5,12 +5,13 @@
         <title>Tarjeta</title>
         <link rel="stylesheet" href="estilos.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <script src="java.js"></script>
     </head>
     <body>
         <div class="contenedor">
             <img src="valery.jpeg" width="180px">
             <h1>Valery Ovalle Cañon</h1>
-            <h2>Ingeniería de Sistemas</h2>
+            <h2 id="cambioMensaje">Ingeniería de Sistemas</h2>
             <h3>Estudiante Ingeniería de Sistemas (Octavo Semestre), con interés en bases de datos y desarrollo web. Busco oportunidades para aprender,
                 mejorar y lograr mis metas.
             </h3>
@@ -23,9 +24,8 @@
                 </ul>
             </div>
             <div class="boton">
-                <button>Pasa sobre mi</button>
-            </div>
-            <script src="java.js"></script>
+                <button onclick="cambiarTexto()">Cambiar Mensaje</button>
+            </div>  
         </div>
     </body>
 </html>
