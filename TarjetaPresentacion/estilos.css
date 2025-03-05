@@ -79,18 +79,16 @@ h3{
     }
 }
 .boton{
-    padding:10px 20px;
     button{
-        padding:10px 20px;
-        font-size: 20px;
-        background-color: #f7cef3d8;
-        border-radius: 5px;
-
-        
+    padding:10px 20px;
+    font-size: 20px;
+    background-color: #f7cef3d8;
+    border-radius: 5px;
     }
     button:hover{
         background: linear-gradient(180deg,#fff ,#ff32cca2);
     }
-   
 }
-
+.darkMode{
+    background: linear-gradient(180deg,#a599a457 ,#50104059);
+}
