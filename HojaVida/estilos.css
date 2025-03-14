@@ -18,6 +18,7 @@ body{
         width: 100%;
         padding-bottom: 10px;
         text-align: center;
+        border-radius: 50px;
         h1{
             padding-top: 0px;
             font-family: "MonteCarlo", cursive;
@@ -41,5 +42,30 @@ body{
             margin: auto;
         }
     }
+    .contacto{
+        margin-top: 30px;
+        background-color: white;
+        text-align: center;
+        ul{
+            background-color: #ffe3ec;
+            width: 97%;
+            display: center;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 50px;
+            margin: auto;
+            list-style: none;
+            text-align: center;
+        }
+        li{
+            display: inline-block;
+            margin: 0 60px;
+            font-size: 30px;
+        }
+        i{
+            font-size: 30px;
+        }
+    }
+   
    
 }
