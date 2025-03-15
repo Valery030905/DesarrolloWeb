@@ -24,7 +24,7 @@ body{
             font-family: "MonteCarlo", cursive;
             font-weight: 500;
             font-style: normal;
-            font-size: 90px;
+            font-size: 8vw;
             margin-bottom: 0%;
         }
         h2{
@@ -40,10 +40,11 @@ body{
             border-radius: 50px;
             width: fit-content;
             margin: auto;
+            font-size: 1.8vw;;
         }
     }
     .contacto{
-        margin-top: 30px;
+        margin-top: 1%;
         background-color: white;
         text-align: center;
         ul{
@@ -51,19 +52,18 @@ body{
             width: 97%;
             display: center;
             align-items: center;
-            padding: 10px 20px;
+            padding: 2%;
             border-radius: 50px;
-            margin: auto;
             list-style: none;
             text-align: center;
         }
         li{
             display: inline-block;
-            margin: 0 60px;
-            font-size: 30px;
+            margin: 0 10px;
+            font-size: 2vw;
         }
         i{
-            font-size: 30px;
+            font-size: 2vw;
         }
     }
     .columnas{
@@ -87,15 +87,48 @@ body{
         text-align: left;
         margin-left: 50px;
         h3 {
-            font-size: 20px;
+            font-size: 1.6vw;
             font-weight: bold;
         }
         p {
-            font-size: 20px;
+            font-size: 1.4vw;
             margin: 10px;
         }
     }
-
+    .habilidades{
+        text-align: left;
+        list-style-type: none;
+        font-size: 2.5vw;
+    }
+    .barraE{
+        width: 85%;
+        border: 1px solid black;
+        height: 1.3vw;
+        padding: 1px;
+        margin-bottom: 2%;
+        .barraI{
+            height: 100%;
+            background-color: rgb(225, 216, 216);
+        }
+        .progreso{
+            background: linear-gradient(rgb(255, 185, 185), rgb(223, 114, 133), rgb(255, 185, 185));
+            height: 100%;
+            transition: width 0.5s;
+        }
+        #html{
+            --nivel: 0.5%;
+            width: var(--nivel);
+        }
+        #css{
+            --nivel: 0.5%;
+            width: var(--nivel);
+        }
+        #java{
+            --nivel: 0.5%;
+            width: var(--nivel);
+        }
+        
+    }
     .redes{
         padding: 0;
         margin-top: 30px;
@@ -106,7 +139,7 @@ body{
             width: 97%;
             display: center;
             align-items: center;
-            padding: 10px 20px;
+            padding: 2%;
             border-radius: 50px;
             margin: auto;
             list-style: none;
@@ -117,7 +150,7 @@ body{
             margin: 0 17.5px;
         }
         i{
-            font-size: 50px;
+            font-size: 4vw;
         }
         i:hover, i:focus{
             color: #00000082;
@@ -147,13 +180,13 @@ body{
     margin: auto;
     list-style: none;
     text-align: center;
-    font-size: 18px;    
+    font-size: 1.3vw;    
     i{
-        font-size: 20px;
+        font-size: 1.3vw;
     }
 }
 .texto{
-    font-size: 20px;
+    font-size: 1.3vw;
     text-align: justify;
     margin-left: 30px;
 }
