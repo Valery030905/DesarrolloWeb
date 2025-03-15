@@ -19,3 +19,22 @@ barraJava.addEventListener("mouseover", () => {
     const valor = 75;
     progreso3.style.setProperty("--nivel", `${valor}%`)
 })
+
+const btn = document.getElementById('modo-btn');
+
+btn.addEventListener('click', () => {
+    document.body.classList.toggle('modo-oscuro');
+
+    if (document.body.classList.contains('modo-oscuro')) {
+        btn.textContent = 'Modo Claro';
+        localStorage.setItem('modo', 'oscuro');
+    } else {
+        btn.textContent = 'Modo Oscuro';
+        localStorage.setItem('modo', 'claro');
+    }
+});
+
+if (localStorage.getItem('modo') === 'oscuro') {
+    document.body.classList.add('modo-oscuro');
+    btn.textContent = 'Modo Claro';
+}
