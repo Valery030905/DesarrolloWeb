@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Animaciones */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos */
+
+.header{
+    background-color: black;
+    img{
+        width: 200px;
+    }
+}
+body{
+    margin: 0%;
+    .banner{
+        margin-top: 5px;
+        img{
+            width: 100%;
+            height: 50%;
+        }
+        
+    }
+}
+
+.productos {
+    padding: 10px;
+    h2 {
+        font-size: 4vw;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.producto {
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    color: white;
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    h3 {
+        margin: 10px 0;
+    }
+    p {
+        color: #680b75;
+        font-weight: bold;
+    }
+}
+
+
+.registro {
+    background-color: #000000;
+    padding: 20px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        color: white;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+    }
+    input {
+        width: 50%;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+     button {
+        width: 50%;
+        background-color:#680b75;
+        color: white;
+        padding: 12px;
+        border: none;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 10px;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        box-shadow: 0 0 10px #680b75, 0 0 10px #680b75, 0 0 10px #680b75;
+    }
+
+    button:hover {
+        background-color: #43064b;
+        box-shadow: 0 0 10px #43064b, 0 0 20px #43064b, 0 0 30px #43064b;
+        transform: scale(1.05);
+        transition: 0.3s ease-in-out;
+    }
+
+}
+
+footer {
+    background-color: #000000;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    img{
+        width: 200px;
+    }
+
+}
